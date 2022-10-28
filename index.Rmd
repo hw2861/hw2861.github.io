@@ -1,22 +1,26 @@
 ---
-title: "My website for P8104 HW4"
+title: "My website for P8105 HW4"
 author: "Hongmiao Wang"
 date: "10/28/2022"
 output: 
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
 ---
 
 # Problem 1
 
 ## A brief introductory landing page
-Hello, this is my landing page of HW4!
+Hello, this is my landing page for HW4!
+
 In this website, you can find personal information about me and my academic and professional experience.
 
 Also I create a flexdashboard in question 2. You can find three distinct plots about **Instacart**.
 
 
 ## My academic and professional experience
+My academic and professional experience is here:
+[About Me](about.html)
+
+
 ## Links in the site navigation for your GitHub account
