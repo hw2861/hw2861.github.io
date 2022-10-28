@@ -23,4 +23,7 @@ My academic and professional experience is here:
 [About Me](about.html)
 
 
-## Links in the site navigation for your GitHub account
+## Links in the site navigation 
+Please check the icon at the top of the website page.
+
+
