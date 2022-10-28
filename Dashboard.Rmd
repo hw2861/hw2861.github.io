@@ -1,0 +1,73 @@
+---
+title: "Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(p8105.datasets)
+library(tidyverse)
+library(plotly)
+
+```
+
+```{r dataclean}
+ny_noaa_clean = ny_noaa %>% 
+  janitor::clean_names() %>% 
+  separate(date, into = c("year", "month", "day"),sep ="-",convert = TRUE)%>% 
+    mutate(
+    prcp = prcp*0.1,
+    tmax = as.numeric(tmax)*0.1,
+    tmin = as.numeric(tmin)*0.1)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A scatterplots
+
+```{r scatterplots}
+ny_noaa_clean %>%
+  filter(year==2010)%>%
+  filter(id == "USW00014735"| id == "USC00309389")%>%
+  mutate(Weather_station=recode(
+         id,USW00014735="ALBANY_AP",USC00309389="WHITEHALL"),
+         text_label = str_c("Month:",month, "\nDay:",day)) %>%
+  plot_ly(
+    x = ~tmin, y = ~tmax, type = "scatter", mode = "markers",
+    color = ~Weather_station, text = ~text_label, alpha = 0.5)%>%
+layout(title = "Max and Min temperatures observed at 2 Certain weather stations in NY during 2010")
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B box plots
+
+```{r}
+ny_noaa_clean %>% 
+  mutate(year=as.factor(year))%>% 
+  filter(id == "USW00014735", month== 7 )%>%
+  mutate(Weather_station=recode(id,USW00014735="ALBANY_AP"))%>%
+  plot_ly(y = ~tmax, color = ~year, type = "box", colors = "viridis")%>%
+  layout(title = "Highest temperatures in July at Albany_Ap Weather station over the years")
+```
+    
+    
+
+### Chart C bar plots
+
+```{r}
+ny_noaa_clean %>% 
+  select(id,year,snow)%>% 
+  mutate(year=as.factor(year))%>% 
+  filter(id == "USW00014735",!(snow==0))%>%
+  group_by(year)%>%
+  count() %>% 
+  plot_ly(x = ~year, y = ~n, color = ~year, type = "bar", colors = "viridis")%>%
+  layout(title = "Number of snowfall days observed per year at Albany_Ap Weather Station")
+```
+

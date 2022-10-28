@@ -15,7 +15,7 @@ Hello, this is my landing page for HW4!
 
 In this website, you can find personal information about me and my academic and professional experience.
 
-Also I create a flexdashboard in question 2. You can find three distinct plots about **Instacart**.
+Also I create a flexdashboard in question 2. You can find three distinct plots about **NY NOAA**.
 
 
 ## My academic and professional experience
