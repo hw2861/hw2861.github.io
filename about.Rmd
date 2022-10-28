@@ -1,0 +1,39 @@
+---
+title: "About me"
+author: "Hongmiao Wang"
+date: "10/28/2022"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+## My academic and professional experience
+
+### Academic Experience
+-**09/2021 – 06/2023**         
+Columbia University  
+Major: Epidemiology   
+Master’s Degree of Science pending in Jun. 2023
+
+
+
+-**09/2017 – 06/2021**           
+Tianjin University  
+Major: Biological Science   
+Bachelor’s Degree of Science in Jun. 2021
+
+### Professional Experience
+**1)Global Psychiatric Epidemiology Group** 
+
+1.Provided SAS programming support for sleeping research project in NEW YORK STATE PSYCHIATRIC INSTITUTE.   
+2.Screened data, conducted exploratory factor analysis, explored the correlation between the variables,  and developed the regression models for the sleeping outcome and WORRY exposure of the participants.
+3.Assisted in the preparation of statistical files and reported the statistical results on a weekly basis.  
+
+
+**2)Tianjin No.4 Central Hospital** 
+
+1.Researched on the evaluation pathway of public health system, tracked cases and conducted follow-up communication.   
+2.Created and maintained of the disease pre-screening and triage database, analyzed data and implemented other related scientific work(data collection, data input and transmission).
+
