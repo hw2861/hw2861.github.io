@@ -10,7 +10,7 @@ output:
 
 # Problem 1
 
-## A brief introductory landing page
+### A brief introductory landing page
 Hello, this is my landing page for HW4!
 
 In this website, you can find personal information about me and my academic and professional experience.
@@ -18,12 +18,17 @@ In this website, you can find personal information about me and my academic and 
 Also I create a flexdashboard in question 2. You can find three distinct plots about **NY NOAA**.
 
 
-## My academic and professional experience
+### My academic and professional experience
 My academic and professional experience is here:
 [Resume](about.html)
 
 
-## Links in the site navigation 
+### Links in the site navigation 
 Please check the icon at the top of the website page.
 
+
+# Problem 2
+
+3 distinct plots about **NY NOAA** is here:
+[Dashboard](Dashboard.html)
 
