@@ -20,7 +20,7 @@ Also I create a flexdashboard in question 2. You can find three distinct plots a
 
 ## My academic and professional experience
 My academic and professional experience is here:
-[About Me](about.html)
+[Resume](about.html)
 
 
 ## Links in the site navigation 
