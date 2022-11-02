@@ -37,6 +37,13 @@ Bachelor’s Degree of Science in Jun. 2021
 1. Researched on the evaluation pathway of public health system, tracked cases and conducted follow-up communication.   
 2. Created and maintained of the disease pre-screening and triage database, analyzed data and implemented other related scientific work(data collection, data input and transmission).
 
+### Skill
+**Coding/Software**: SAS, R, Microsoft Office Suite.
+
+**Biostatistics**: Regression model construction, Clinical data analysis, Longitudinal data analysis.
+
+**Epidemiology**: Cohort/Case-control/RCT study design, Public Health Systematic Assessment.
+
 
 
 
